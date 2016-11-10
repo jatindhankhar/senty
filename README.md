@@ -32,4 +32,7 @@ SOFTWARE.
 <i> See the LICENSE FILE </i>
 
 # References and Thanks
+* VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text** <br />
+  (by C.J. Hutto and Eric Gilbert) <br />
+  Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 * [Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.](http://www.nltk.org")
