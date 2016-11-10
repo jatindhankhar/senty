@@ -3,16 +3,17 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='')
 sid = SentimentIntensityAnalyzer()
 
 @app.route("/")
 def hello():
-    return "Hello World"
+    return app.send_static_file('index.html')
 
-@app.route('/score')
+@app.route('/score',methods=['POST'])
 def score():
     phrase =  request.args.get('phrase')
+    
     if phrase:
       return jsonify(sid.polarity_scores(phrase))
     else:

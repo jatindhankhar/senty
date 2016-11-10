@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Senty </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/twemoji-awesome.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container">
+        <header class="text-center text-primary " style="padding-bottom : 60px;">
+            <h1 style="font-size: 100px">Senty</h1>
+        </header>
+
+        <form class="form-inline text-center" role="form" id="tar">
+
+            <div class="form-group">
+
+                <input class="form-control input-lg" id="inputlg" type="text" placeholder="Enter your text">
+            </div>
+            <div class="form-group form-group-lg">
+                <button type="submit" class="btn btn-primary btn-lg">
+              Go !</button>
+            </div>
+
+        </form>
+        <div class="text-center " id="result">
+            <i cite="/" style="font-size: 32px ;" id="sentence">
+
+            </i>
+            <!--<form class="form-inline form-inline-lg" action="/vote" method="post" id="vote">
+                <div class="btn-group-inline">
+                    <button type="radio" name="vote" value="upvote" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"> </button>
+                    <button type="radio" name="vote" value="downvote" class="btn btn-lg btn-danger"> <span class="glyphicon glyphicon-thumbs-down"></button>
+                </div>-->
+
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="twa twa-smile twa-4x"></i>
+                    <h1 class="text text-success">Positive</h1>
+                    <div class="progress text-center" >
+                        <div class="progress-bar progress-bar-success  progress-bar-striped active" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width:70%" id="pos-prog">
+
+                        </div>
+                    </div>
+                    <h4 id="pos"></h4>
+                </div>
+                <div class="col-md-4">
+                  <i class="twa twa-disappointed twa-4x"></i>
+                    <h1 class="text text-danger">Negative</h1>
+                    <div class="progress text-center" >
+                        <div class="progress-bar progress-bar-danger  progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:70%" id="neg-prog">
+
+                        </div>
+                    </div>
+                    <h4 id="neg"></h4>
+                </div>
+                <div class="col-md-4">
+                  <i class="twa twa-expressionless twa-4x"></i>
+                    <h1 class="text text-info">Neutral</h1>
+                    <div class="progress text-center" >
+                        <div class="progress-bar progress-bar-info  progress-bar-striped active" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width:70%" id="neu-prog">
+
+                        </div>
+                    </div>
+                    <h4 id="neu"></h4>
+                </div>
+            </div>
+            </form>
+            <hr>
+            <button type="button" class="btn btn-lg " id="again"> More!</button>
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
