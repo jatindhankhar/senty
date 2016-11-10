@@ -4,6 +4,7 @@ Simple Web App to show sentimental score built on top of NLTK's SentimentIntensi
 This project uses NLTK library to for heavy lifting
 Flask as Backend component
 
+![Demo](demo.png)
 # LICENSE
 <blockquote>
 MIT License
