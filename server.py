@@ -1,10 +1,11 @@
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
+#from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from vaderSentiment.vaderSentiment import sentiment
 from flask import Flask
 from flask import request
 from flask import jsonify
 
 app = Flask(__name__,static_url_path='')
-sid = SentimentIntensityAnalyzer()
+
 
 @app.route("/")
 def hello():
@@ -15,7 +16,7 @@ def score():
     phrase =  request.args.get('phrase')
     
     if phrase:
-      return jsonify(sid.polarity_scores(phrase))
+      return jsonify(sentiment(phrase))
     else:
       return jsonify({"error" : "Phrase cannot be empty"})
 
