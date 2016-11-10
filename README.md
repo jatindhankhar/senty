@@ -1,7 +1,7 @@
 # senty
-Simple Web App to show sentimental score built on top of NLTK's SentimentIntensityAnalyzer
+Simple Web App to show sentimental score built on top of [VaderSentiment](https://github.com/cjhutto/vaderSentiment)
 
-This project uses NLTK library to for heavy lifting
+This project uses Vader library to for heavy lifting
 Flask as Backend component
 
 ![Demo](demo.png)
