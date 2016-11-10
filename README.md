@@ -5,8 +5,8 @@ This project uses NLTK library to for heavy lifting
 Flask as Backend component
 
 # LICENSE
-
-##MIT License
+<blockquote>
+MIT License
 
 Copyright (c) 2016 Jatin Dhankhar
 
@@ -27,7 +27,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+</blockquote>
+<i> See the LICENSE FILE </i>
 
 # References and Thanks
-*[Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.](http://www.nltk.org")
+* [Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.](http://www.nltk.org")
