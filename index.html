@@ -145,28 +145,41 @@
 				</section>
 
 				<section>
+				<section>
 					<h2>VADER</h2>
 					<p>
 						 <strong><code>VADER (Valence Aware Dictionary and sEntiment Reasoner)</code> </strong> is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains.
 					</p>
 				</section>
+				<section>
+					<h2>Assigning Emotions</h2>
+					<p>
+						Analysis from Compound
+					</p>
 
+						<ul>
+
+							<li>‘positive‘ ( score > 0.5);</li>
+
+							<li>‘somewhat positive‘ (score < 0.5 and score > 0.1);</li>
+
+							<li>‘neutral‘ (score < 0.1 and score > -0.1);</li>
+
+							<li>‘somewhat negative‘ (score < -0.1 and score > -0.5);</li>
+
+						<li>	‘negative‘ (score < -0.5).</li>
+							</ul>
+
+				</section>
+      </section>
 				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+					<p>
+						Under the Hood
+					</p>
+					 1) works well on social me-dia style text, yet readily generalizes to multiple domains,
+					  2) requires no training data, but is constructed from a gen-eralizable,  valence-based,  human-curated  gold  standard sentiment lexicon
+						 3) is fast enough to be used online with streaming  data,  and  
+						4)  does  not  severely  suffer  from  a speed-performance tradeoff
 				</section>
 
 				<section>
