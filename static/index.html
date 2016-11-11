@@ -16,10 +16,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
+
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -32,8 +29,8 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="container">
-        <header class="text-center text-primary " style="padding-bottom : 60px;">
-            <h1 style="font-size: 100px">Senty</h1>
+        <header class="text-center text-primary " style="maring: 25px;">
+            <h1 style="font-size: 80px">Senty</h1>
         </header>
 
         <form class="form-inline text-center" role="form" id="tar">
@@ -52,12 +49,17 @@
             <i cite="/" style="font-size: 32px ;" id="sentence">
 
             </i>
+            <hr>
             <!--<form class="form-inline form-inline-lg" action="/vote" method="post" id="vote">
                 <div class="btn-group-inline">
                     <button type="radio" name="vote" value="upvote" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"> </button>
                     <button type="radio" name="vote" value="downvote" class="btn btn-lg btn-danger"> <span class="glyphicon glyphicon-thumbs-down"></button>
                 </div>-->
-
+              <div class="row">
+                <div class="text-center col-lg-4 col-lg-offset-4">
+                  <h2 class="text text-warning " style="border-style:dashed;" id="compound"></h2>
+                </div>
+              </div>
             <hr>
             <div class="row">
                 <div class="col-md-4">
@@ -93,7 +95,7 @@
             </div>
             </form>
             <hr>
-            <button type="button" class="btn btn-lg " id="again"> More!</button>
+            <button type="button" class="btn btn-lg " id="again"> Try Again!</button>
         </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

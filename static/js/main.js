@@ -20,6 +20,30 @@ $(document).ready(
                     $('#neg-prog').css('width', (responseData["neg"]*100)+'%').attr('aria-valuenow', (responseData["neg"])*100);
                     $('#neu').text((responseData["neu"] * 100).toFixed(2) + " %")
                     $('#neu-prog').css('width', (responseData["neu"]*100)+'%').attr('aria-valuenow', (responseData["neu"]*100));
+                    var score = responseData["compound"];
+                    var compound = $('#compound');
+                    console.log(compound) ;
+                    if(score>0.5)
+                    {
+                      compound.text("Overall Positive");
+                    }
+                    else if(score < 0.5 && score > 0.1)
+                    {
+                      compound.text("Score: Somewhat Positive");
+                    }
+                    else if(score < 0.1 && score > -0.1)
+                    {
+                      compound.text("Score: Neutral");
+                    }
+                    else if(score < -0.1 && score > -0.5){
+                      compound.text("Score : Somewhat Negative");
+                    }
+                    else if(score < 0.5){
+                      compound.text("Score: Negative");
+                    }
+                    else {
+                      // Do nothing
+                    }
                     $('#result').show();
 
                 }
