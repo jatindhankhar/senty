@@ -20,6 +20,7 @@
     </style>
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/twemoji-awesome.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -29,7 +30,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <div class="container">
-        <header class="text-center text-primary " style="maring: 25px;">
+        <header class="text-center text-primary " style="margin: 25px;">
             <h1 style="font-size: 80px">Senty</h1>
         </header>
 
@@ -62,7 +63,7 @@
               </div>
             <hr>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 reaction-box" id="pos-box">
                     <i class="twa twa-smile twa-4x"></i>
                     <h1 class="text text-success">Positive</h1>
                     <div class="progress text-center" >
@@ -72,7 +73,7 @@
                     </div>
                     <h4 id="pos"></h4>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 reaction-box" id="neg-box">
                   <i class="twa twa-disappointed twa-4x"></i>
                     <h1 class="text text-danger">Negative</h1>
                     <div class="progress text-center" >
@@ -82,7 +83,7 @@
                     </div>
                     <h4 id="neg"></h4>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 reaction-box" id="neu-box">
                   <i class="twa twa-expressionless twa-4x"></i>
                     <h1 class="text text-info">Neutral</h1>
                     <div class="progress text-center" >

@@ -26,20 +26,25 @@ $(document).ready(
                     if(score>0.5)
                     {
                       compound.text("Overall Positive");
+                      $('#pos-box').addClass('animated bounce slow');
                     }
                     else if(score < 0.5 && score > 0.1)
                     {
                       compound.text("Score: Somewhat Positive");
+                      $('#pos-box').addClass('animated bounce slow');
                     }
                     else if(score < 0.1 && score > -0.1)
                     {
                       compound.text("Score: Neutral");
+                      $('#neu-box').addClass('animated bounce slow');
                     }
                     else if(score < -0.1 && score > -0.5){
                       compound.text("Score : Somewhat Negative");
+                      $('#neg-box').addClass('animated bounce slow');
                     }
                     else if(score < 0.5){
                       compound.text("Score: Negative");
+                      $('#neg-box').addClass('animated bounce slow');
                     }
                     else {
                       // Do nothing
