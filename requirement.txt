@@ -1,7 +1,7 @@
-click==6.6
-Flask==0.11.1
-itsdangerous==0.24
-Jinja2==2.8
-MarkupSafe==0.23
-vaderSentiment==0.5
-Werkzeug==0.11.11
+click==7.0
+Flask==1.0.3
+itsdangerous==1.1.0
+Jinja2==2.10.1
+MarkupSafe==1.1.1
+vaderSentiment
+Werkzeug==0.15.4
