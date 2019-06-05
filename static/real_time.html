@@ -32,31 +32,22 @@
     <div class="container">
         <header class="text-center text-primary " style="margin: 25px;">
             <h1 style="font-size: 80px">Senty</h1>
-            <h1 style="font-size: 80px"> <a href="real_time.html">Real Time </a></h1>
         </header>
 
-        <form class="form-inline text-center" role="form" id="tar">
+        <form class="form-inline text-center" role="form" id="tar" style="margin: 30px;">
 
             <div class="form-group">
 
                 <input class="form-control input-lg" id="inputlg" type="text" placeholder="Enter your text">
             </div>
-            <div class="form-group form-group-lg">
-                <button type="submit" class="btn btn-primary btn-lg">
-              Go !</button>
-            </div>
 
         </form>
         <div class="text-center " id="result">
-            <i cite="/" style="font-size: 32px ;" id="sentence">
+            <p cite="/" style="font-size: 32px;" id="sentence">
 
-            </i>
+            </p>
             <hr>
-            <!--<form class="form-inline form-inline-lg" action="/vote" method="post" id="vote">
-                <div class="btn-group-inline">
-                    <button type="radio" name="vote" value="upvote" class="btn btn-lg btn-success"><span class="glyphicon glyphicon-thumbs-up"> </button>
-                    <button type="radio" name="vote" value="downvote" class="btn btn-lg btn-danger"> <span class="glyphicon glyphicon-thumbs-down"></button>
-                </div>-->
+    
               <div class="row">
                 <div class="text-center col-lg-4 col-lg-offset-4">
                   <h2 class="text text-warning " style="border-style:dashed;" id="compound"></h2>
@@ -97,7 +88,6 @@
             </div>
             </form>
             <hr>
-            <button type="button" class="btn btn-lg " id="again"> Try Again!</button>
         </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -108,6 +98,7 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/vader.js"></script>
 </body>
 
 </html>
